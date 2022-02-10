@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+h2{
+    font-size: 25px;
+    font-weight: 600;
+}
+h3{
+    font-size: 21px;
+    font-weight: 800;
+}
+h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+h5{
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+h6{
+    color: whitesmoke;
+}
+.navbar{
+    font-size: 18px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 15px rgb(43, 40, 40);
+}
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active{
+    color: red;
+}
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+#bar{
+    font-size: 22px;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: rgb(22, 15, 15);
+}
+#bar:hover,
+#bar.active{
+    color: #fff;
+}
+
+@media only screen and (max-width:991px){
+    body > nav > div > button:hover,
+    body > nav > div > button:focus{
+        background-color: crimson;
+    }
+    #navbarSupportedContent > ul{
+        margin: 18px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 10px 0;
+    }
+}
+
+.navbar i{
+    padding: 0 7px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button{
+    font-size: 15px;
+    font-weight: 700;
+    background-color: black;
+    color: aliceblue;
+    padding: 13px 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+button:hover{
+    background-color: rgb(85, 76, 76);
+}
+#home span{
+    color: red;
+}
+#home{
+    background-image: url(./image/model1.jpg);
+    width: 100%;
+    height: 110vh;
+    background-size: cover;
+    /* background-position: top 106px center; */
+    background-position: right 106px top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rosybrown;
+}
+
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#new .one .details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+#new .one:hover .details{
+    cursor: pointer;
+    background-color: rgba(245, 178,178,0.5);
+    /* background-color: rgba(124, 95, 110, 0.8); */
+}
+#new .one .details button{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2a2a2a;
+    background: none;
+    border-bottom: 1px solid #2a2a2a;
+    text-transform: uppercase;
+    padding: 3px;
+    transform: translateY(70px);
+    transition: 0.3s ease;
+}
+#new .one .details button:hover{
+    color: rgb(247, 237, 235);
+    border-bottom: 1px solid #e6d5d5;
+}
+#new .one:nth-child(1) .details
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+#new .one:nth-child(2) .details
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#new .one:nth-child(3) .details
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+
+hr{
+    width: 35px;
+    height: 4px;
+    background-color: orangered;
+}
+.star i{
+    font-size: 16px;
+    color: goldenrod;
+}
+.star{
+    padding: 15px 0;
+}
+/* Feature */
+.product{
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.product img{
+    transition: 0.3s all;
+}
+.product:hover img{
+    opacity: 0.5;
+}
+.product .buy-btn{
+    background: orangered;
+    border-color: white;
+    border-radius: 6px;
+    transform: translateY(70px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+.product:hover .buy-btn{
+    transform: translateY(70px);
+    opacity: 1;
+}
+#banner{
+    background-image: url(./image/pexels-andrea-piacquadio-837306.jpg);
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    /* background-position: top 106px center; */
+    background-position: right 106px top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: rosybrown; */
+}
+#banner h1{
+    color: #fff;
+}
+#banner h4{
+    color: orangered;
+}
+#banner button{
+    background-color: orangered;
+    border-radius: 6px;
+}
+footer{
+    background-color: #2a2a2a;
+}
+footer h5{
+    color: #e6d5d5;
+    font-weight: 700;
+    font-size: 22px;
+}
+footer li{
+    padding-bottom: 4px;
+}
+footer li a{
+    font-size: 15px;
+    color: #999;
+}footer li a:hover{
+    color: #e6d5d5;
+}footer p{
+    color: #999;
+    font-size: 15px;
+}
+footer .copyright a{
+    color: #000;
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s all;
+    margin: 0 5px;
+}
+footer .copyright a:hover{
+    color: #fff;
+    background-color: orangered;
+}
+
+
+
+
+
+
+
+
